@@ -1,0 +1,268 @@
+/* Define My Font from File */
+@font-face {
+	font-family: EtailerBold;
+	src: url(font/Quicksand-Bold.otf);
+}
+
+@font-face {
+	font-family: EtailerRegular;
+	src: url(font/Quicksand-Regular.otf);
+}
+
+/* Set defaults for HTML */
+html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+/* Set default for BODY */
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+/* Main DIV, wraps all other content. */ 
+div.glavni {
+	float: left;
+	width: 100%;
+}
+
+/* Define Navigation Bar */
+div.mynavbar {
+	font-family: EtailerBold;
+	font-size: 1.2em;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	float: left;
+	width: 100%;
+}
+
+div.check {
+	float: left;
+	width: 100%;
+	border: 1px solid blue;
+}
+
+/* Define Navigation Bar Items */
+div.navbar_item {
+	/* Size of this element includes borders, paddin, margin... */
+	box-sizing: border-box;
+
+	text-align: center;
+	background: black;
+	outline: 1px solid #222222;
+	float: left;
+	padding: 10px;
+
+	/* Navbar Items are invisible by default */
+	display: none;
+}
+
+/* Style for hyperlinks under navbar items */
+div.navbar_item a {
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	color: silver;
+}
+
+/* Hide checkbox */
+input[type=checkbox] {
+	width: 100%;
+	display: none;
+}
+
+/* When checkbox is clicked, display the navbar items */
+input[type=checkbox]:checked ~ div.navbar_item {
+	display: inline;
+}
+
+/* Style the Header */
+header {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 100%;
+	overflow: auto;
+	margin-bottom: 20px;
+}
+
+/* Article Style */
+article {
+	box-sizing: border-box;
+	margin-top: 5px;
+	padding-right: 5px;
+	padding-left: 5px;
+	text-align: justify;
+	overflow: auto;
+	font-family: Arial;
+	width: 100%;
+}
+
+/* Style H1 and H2 under Article */
+article h1, h2 {
+	background: white; /*silver;*/
+	font-family: EtailerBold;
+	text-align: left;
+	padding-left: 5px;
+}
+
+/* Summary of documents should be BOLD */
+article p.technology {
+	text-align: left;
+	padding-left: 5px;
+	font-weight: bold;
+}
+
+/* Article Links Style */
+article a {
+	text-decoration: none;
+	color: silver;
+	font-weight: bold;
+}
+
+/* Article Paragraphs Style */
+article p {
+	padding-left: 5px;
+}
+
+/* Site Index Style */
+div.myindex {
+        margin: 0;
+        padding 0;
+        background: silver;
+        text-align: center;
+}
+
+div.myindex h2 {
+        color: black; /*white; */
+        text-align: center;
+        padding-bottom: 20px;
+}
+
+div.myimage {
+        text-align: center;
+}
+
+/* Contact Form */
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+label.contact {
+        display: inline-block;
+        color: silver;
+        padding: 10px;
+}
+
+/* Phone Look 
+ * Site elements are styled diferently when displayed on small and big screen.
+ * This is main part for resposnive design
+*/
+@media only screen and (max-width: 768px) {
+	div.mynavbar {
+		background: black;
+		width: 100%;
+	}
+
+	div.navbar_item {
+		width: 100%;
+	}
+
+	div.logo {
+		color: silver;
+		font-size: 0.5em;
+		float: right;
+		margin: 5px;
+	}
+
+	article {
+	}
+}
+
+/* Desktop Look */
+@media only screen and (min-width: 768px) {
+
+	/* Center the page */
+	div.glavni {
+		float: none;
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	div.mynavbar {
+		background: black;
+		width: 100%;
+	}
+
+	input[type=checkbox] {
+		display: none;
+	}
+
+	label {
+		display: none;
+	}
+
+	div.navbar_item {
+		display: inline;
+		outline: 0; /*px solid #333333;*/
+		float: left;
+	}
+
+	div.logo {
+		color: silver;
+		font-size: 0.5em;
+		float: right;
+		margin: 5px;
+	}
+
+	article h2 {
+		background: white; /*black;*/
+		margin-top: 5%;
+	}
+
+	img {
+		width: 20%;
+		margin-left: 3%;
+	}
+
+	div.myindex {
+		background: black;
+	}
+
+}
