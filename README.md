@@ -38,6 +38,7 @@ After that, you are ready to create MicroResposnive Web Site. The structure of y
   ...
   </article>
 </div> <!-- glavni -->  
+```
 
 ## Desktop Template
 ![alt Logo](https://github.com/exoplusplus/MicroResponsive/blob/master/desktop_template.png)
