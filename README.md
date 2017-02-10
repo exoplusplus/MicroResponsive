@@ -4,6 +4,9 @@ Micro Responsive Website Template
 Minimal and basic CSS template to build simple, responsive, web site.
 
 # Table of Contents
+[Install](https://github.com/exoplusplus/MicroResponsive/blob/master/README.md#install)
+[Usage](https://github.com/exoplusplus/MicroResponsive/blob/master/README.md#usage)
+[Desktop Template](https://github.com/exoplusplus/MicroResponsive/blob/master/README.md#dt)
 
 
 ## Install
